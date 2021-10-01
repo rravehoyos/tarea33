@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>hola</title>
+	<style>
+		.boto{
+			width: 100px;
+			height: 80px;
+			background: red;
+		}
+
+	</style>
+</head>
+<body>
+	<form>
+		<label>precio del producto</label>
+		<br>
+
+		<input type="text" id="hola" placeholder="precio">
+		<br>
+		<label>cantidad del producto</label>
+		<br>
+		<input type="text" id="hola1" placeholder="cantidad">
+	</form>
+	<div class="boto" onclick="calcu()" id="lola"></div>
+	<script>
+		function calcu(){
+			x=Number(hola.value);
+			y=Number(hola1.value);
+			resul=x*y;
+			lola.innerHTML=resul;
+		}
+
+	</script>
+
+</body>
+</html>
